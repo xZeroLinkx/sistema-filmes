@@ -27,7 +27,9 @@ public class Participacao implements Serializable {
 		this.personagem = personagem;
 		this.desconto = desconto;
 		this.artista = artista;
+		artista.addParticipacao(this);
 		this.filme = filme;
+		filme.addParticipacao(this);
 	}
 
 	public Integer getCodParticipacao() {
@@ -98,6 +100,6 @@ public class Participacao implements Serializable {
 	@Override
 	public String toString() {
 		return "Participacao [codParticipacao=" + codParticipacao + ", personagem=" + personagem + ", desconto="
-				+ desconto + ", artista=" + artista + ", filme=" + filme + "]";
+				+ desconto + "]";
 	}
 }

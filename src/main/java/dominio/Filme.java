@@ -69,6 +69,15 @@ public class Filme implements Serializable {
 	public void setParticipacoes(List<Participacao> participacoes) {
 		this.participacoes = participacoes;
 	}
+	
+	public void addParticipacao(Participacao x) {
+		this.participacoes.add(x);
+		x.setFilme(this);
+	}
+	
+	public void removeParticipacao(Participacao x) {
+		this.participacoes.remove(x);
+	}
 
 	@Override
 	public int hashCode() {
@@ -97,6 +106,6 @@ public class Filme implements Serializable {
 
 	@Override
 	public String toString() {
-		return "Filme [codFilme=" + codFilme + ", titulo=" + titulo + ", duracao=" + duracao + ", ano=" + ano + ", participacoes=" + participacoes + "]";
+		return "Filme [codFilme=" + codFilme + ", titulo=" + titulo + ", duracao=" + duracao + ", ano=" + ano + "]";
 	}
 }

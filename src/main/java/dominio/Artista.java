@@ -81,6 +81,15 @@ public class Artista implements Serializable {
 	public void setParticipacoes(List<Participacao> participacoes) {
 		this.participacoes = participacoes;
 	}
+	
+	public void addParticipacao(Participacao x) {
+		this.participacoes.add(x);
+		x.setArtista(this);
+	}
+	
+	public void removeParticipacao(Participacao x) {
+		this.participacoes.remove(x);
+	}
 
 	@Override
 	public int hashCode() {
@@ -110,6 +119,6 @@ public class Artista implements Serializable {
 	@Override
 	public String toString() {
 		return "Artista [codAtor=" + codAtor + ", nome=" + nome + ", nacionalidade=" + nacionalidade + ", cache="
-				+ cache + ", nascimento=" + nascimento + ", participacoes=" + participacoes + "]";
+				+ cache + ", nascimento=" + nascimento + "]";
 	}
 }
