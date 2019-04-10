@@ -1,6 +1,8 @@
 package dominio;
 
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Filme implements Serializable {
 	private static final long serialVersionUID = 1L;
@@ -8,6 +10,7 @@ public class Filme implements Serializable {
 	String titulo;
 	Integer duracao;
 	Integer ano;
+	List<Participacao> participacoes = new ArrayList<>();
 
 	public Filme() {
 		super();
@@ -52,6 +55,14 @@ public class Filme implements Serializable {
 	public void setAno(Integer ano) {
 		this.ano = ano;
 	}
+	
+	public List<Participacao> getParticipacoes() {
+		return participacoes;
+	}
+
+	public void setParticipacoes(List<Participacao> participacoes) {
+		this.participacoes = participacoes;
+	}
 
 	@Override
 	public int hashCode() {
@@ -80,6 +91,6 @@ public class Filme implements Serializable {
 
 	@Override
 	public String toString() {
-		return "Filme [codFilme=" + codFilme + ", titulo=" + titulo + ", duracao=" + duracao + ", ano=" + ano + "]";
+		return "Filme [codFilme=" + codFilme + ", titulo=" + titulo + ", duracao=" + duracao + ", ano=" + ano + ", participacoes=" + participacoes + "]";
 	}
 }

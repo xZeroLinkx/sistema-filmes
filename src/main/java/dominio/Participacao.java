@@ -9,17 +9,19 @@ public class Participacao implements Serializable {
 	String personagem;
 	BigDecimal desconto;
 	Artista artista;
+	Filme filme;
 	
 	public Participacao() {
 		super();
 	}
 
-	public Participacao(Integer codParticipacao, String personagem, BigDecimal desconto, Artista artista) {
+	public Participacao(Integer codParticipacao, String personagem, BigDecimal desconto, Artista artista, Filme filme) {
 		super();
 		this.codParticipacao = codParticipacao;
 		this.personagem = personagem;
 		this.desconto = desconto;
 		this.artista = artista;
+		this.filme = filme;
 	}
 
 	public Integer getCodParticipacao() {
@@ -54,6 +56,14 @@ public class Participacao implements Serializable {
 		this.artista = artista;
 	}
 
+	public Filme getFilme() {
+		return filme;
+	}
+
+	public void setFilme(Filme filme) {
+		this.filme = filme;
+	}
+
 	@Override
 	public int hashCode() {
 		final int prime = 31;
@@ -82,6 +92,6 @@ public class Participacao implements Serializable {
 	@Override
 	public String toString() {
 		return "Participacao [codParticipacao=" + codParticipacao + ", personagem=" + personagem + ", desconto="
-				+ desconto + ", artista=" + artista + "]";
+				+ desconto + ", artista=" + artista + ", filme=" + filme + "]";
 	}
 }
