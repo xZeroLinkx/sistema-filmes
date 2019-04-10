@@ -2,7 +2,9 @@ package dominio;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 public class Artista implements Serializable {
 	private static final long serialVersionUID = 1L;
@@ -11,6 +13,7 @@ public class Artista implements Serializable {
 	String nacionalidade;
 	BigDecimal cache;
 	Date nascimento;
+	List<Participacao> participacoes = new ArrayList<>();
 	
 	public Artista() {
 		super();
@@ -65,6 +68,14 @@ public class Artista implements Serializable {
 		this.nascimento = nascimento;
 	}
 
+	public List<Participacao> getParticipacoes() {
+		return participacoes;
+	}
+
+	public void setParticipacoes(List<Participacao> participacoes) {
+		this.participacoes = participacoes;
+	}
+
 	@Override
 	public int hashCode() {
 		final int prime = 31;
@@ -93,6 +104,6 @@ public class Artista implements Serializable {
 	@Override
 	public String toString() {
 		return "Artista [codAtor=" + codAtor + ", nome=" + nome + ", nacionalidade=" + nacionalidade + ", cache="
-				+ cache + ", nascimento=" + nascimento + "]";
+				+ cache + ", nascimento=" + nascimento + ", participacoes=" + participacoes + "]";
 	}
 }

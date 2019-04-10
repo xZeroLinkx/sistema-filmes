@@ -8,16 +8,18 @@ public class Participacao implements Serializable {
 	Integer codParticipacao;
 	String personagem;
 	BigDecimal desconto;
+	Artista artista;
 	
 	public Participacao() {
 		super();
 	}
 
-	public Participacao(Integer codParticipacao, String personagem, BigDecimal desconto) {
+	public Participacao(Integer codParticipacao, String personagem, BigDecimal desconto, Artista artista) {
 		super();
 		this.codParticipacao = codParticipacao;
 		this.personagem = personagem;
 		this.desconto = desconto;
+		this.artista = artista;
 	}
 
 	public Integer getCodParticipacao() {
@@ -42,6 +44,14 @@ public class Participacao implements Serializable {
 
 	public void setDesconto(BigDecimal desconto) {
 		this.desconto = desconto;
+	}
+
+	public Artista getArtista() {
+		return artista;
+	}
+
+	public void setArtista(Artista artista) {
+		this.artista = artista;
 	}
 
 	@Override
@@ -72,6 +82,6 @@ public class Participacao implements Serializable {
 	@Override
 	public String toString() {
 		return "Participacao [codParticipacao=" + codParticipacao + ", personagem=" + personagem + ", desconto="
-				+ desconto + "]";
+				+ desconto + ", artista=" + artista + "]";
 	}
 }
