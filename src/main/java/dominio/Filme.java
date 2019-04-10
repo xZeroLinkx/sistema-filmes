@@ -1,3 +1,9 @@
+/*
+Nome do autor: Elian Melo Morais
+Data de criação do arquivo: 10/04/2019
+Objetivo sucinto do programa: Simular o funcionamento e gerenciamento de um filme
+Referência ao enunciado/origem do exercício: https://www.youtube.com/user/educandoweb/videos?view=0&sort=da&flow=grid
+*/
 package dominio;
 
 import java.io.Serializable;
@@ -6,11 +12,11 @@ import java.util.List;
 
 public class Filme implements Serializable {
 	private static final long serialVersionUID = 1L;
-	Integer codFilme;
-	String titulo;
-	Integer duracao;
-	Integer ano;
-	List<Participacao> participacoes = new ArrayList<>();
+	private Integer codFilme;
+	private String titulo;
+	private Integer duracao;
+	private Integer ano;
+	private List<Participacao> participacoes = new ArrayList<>();
 
 	public Filme() {
 		super();

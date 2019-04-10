@@ -1,3 +1,9 @@
+/*
+Nome do autor: Elian Melo Morais
+Data de criação do arquivo: 10/04/2019
+Objetivo sucinto do programa: Simular uma participacao em um filme
+Referência ao enunciado/origem do exercício: https://www.youtube.com/user/educandoweb/videos?view=0&sort=da&flow=grid
+*/
 package dominio;
 
 import java.io.Serializable;
@@ -5,11 +11,11 @@ import java.math.BigDecimal;
 
 public class Participacao implements Serializable {
 	private static final long serialVersionUID = 1L;
-	Integer codParticipacao;
-	String personagem;
-	BigDecimal desconto;
-	Artista artista;
-	Filme filme;
+	private Integer codParticipacao;
+	private String personagem;
+	private BigDecimal desconto;
+	private Artista artista;
+	private Filme filme;
 	
 	public Participacao() {
 		super();

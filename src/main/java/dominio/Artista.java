@@ -1,3 +1,9 @@
+/*
+Nome do autor: Elian Melo Morais
+Data de criação do arquivo: 10/04/2019
+Objetivo sucinto do programa: Simular um artista que participa de um filme
+Referência ao enunciado/origem do exercício: https://www.youtube.com/user/educandoweb/videos?view=0&sort=da&flow=grid
+*/
 package dominio;
 
 import java.io.Serializable;
@@ -8,12 +14,12 @@ import java.util.List;
 
 public class Artista implements Serializable {
 	private static final long serialVersionUID = 1L;
-	Integer codAtor;
-	String nome;
-	String nacionalidade;
-	BigDecimal cache;
-	Date nascimento;
-	List<Participacao> participacoes = new ArrayList<>();
+	private Integer codAtor;
+	private String nome;
+	private String nacionalidade;
+	private BigDecimal cache;
+	private Date nascimento;
+	private List<Participacao> participacoes = new ArrayList<>();
 	
 	public Artista() {
 		super();
