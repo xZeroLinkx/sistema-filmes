@@ -1,3 +1,9 @@
+/*
+Nome do autor: Elian Melo Morais
+Data de criação do arquivo: 10/04/2019
+Objetivo sucinto do programa: Servlet com doGet
+Referência ao enunciado/origem do exercício: https://www.youtube.com/user/educandoweb/videos?view=0&sort=da&flow=grid
+*/
 package web;
 
 import java.io.IOException;
