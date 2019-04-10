@@ -102,4 +102,8 @@ public class Participacao implements Serializable {
 		return "Participacao [codParticipacao=" + codParticipacao + ", personagem=" + personagem + ", desconto="
 				+ desconto + "]";
 	}
+	
+	public BigDecimal cachePago() {
+		return artista.getCache().subtract(desconto);
+	}
 }

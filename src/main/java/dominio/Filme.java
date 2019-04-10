@@ -7,6 +7,7 @@ Referência ao enunciado/origem do exercício: https://www.youtube.com/user/educan
 package dominio;
 
 import java.io.Serializable;
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -107,5 +108,13 @@ public class Filme implements Serializable {
 	@Override
 	public String toString() {
 		return "Filme [codFilme=" + codFilme + ", titulo=" + titulo + ", duracao=" + duracao + ", ano=" + ano + "]";
+	}
+	
+	public BigDecimal cacheTotal() {
+		BigDecimal soma = new BigDecimal("0.00");
+		for(Participacao p : participacoes) {
+			soma = soma.add(p.cachePago());
+		}
+		return soma;
 	}
 }
