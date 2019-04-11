@@ -5,6 +5,9 @@ import java.math.BigDecimal;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -38,6 +41,26 @@ public class Instanciacao extends HttpServlet {
 			
 			response.getWriter().append("Cache total do filme " + f1 + "\n");
 			response.getWriter().append(f1.cacheTotal() + "\n");
+			
+			EntityManagerFactory emf = Persistence.createEntityManagerFactory("meujpa");
+			EntityManager em = emf.createEntityManager();
+			
+			em.getTransaction().begin();
+			
+			em.persist(f1);
+			em.persist(f2);
+			em.persist(a1);
+			em.persist(a2);
+			em.persist(a3);
+			em.persist(p1);
+			em.persist(p2);
+			em.persist(p3);
+			em.persist(p4);
+			
+			em.getTransaction().commit();
+			
+			em.close();
+			emf.close();
 			
 			response.getWriter().append("Pronto!");
 		
