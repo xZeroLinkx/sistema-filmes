@@ -48,4 +48,8 @@ public class ArtistaServico {
 	public List<Artista> buscarTodos(){
 		return dao.buscarTodos();
 	}
+	
+	public List<Artista> buscarTodosOrdenadosPorNome(){
+		return dao.buscarTodosOrdenadosPorNome();
+	}
 }
