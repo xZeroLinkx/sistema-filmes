@@ -11,4 +11,5 @@ public interface ArtistaDao {
 	public List<Artista> buscarTodos();
 	
 	public List<Artista> buscarTodosOrdenadosPorNome();
+	public Artista buscaNomeExato(String nome);
 }
