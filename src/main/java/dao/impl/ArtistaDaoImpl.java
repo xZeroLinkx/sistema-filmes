@@ -64,7 +64,8 @@ public class ArtistaDaoImpl implements ArtistaDao {
 	@SuppressWarnings("unchecked")
 	@Override
 	public Artista buscaNomeExatoDiferente(Integer codigo, String nome) {
-		String jpql = "SELECT x FROM Artista x WHERE x.codArtista <> :p0 AND x.nome = :p1";
+		
+		String jpql = "SELECT x FROM Artista x WHERE x.codAtor <> :p0 AND x.nome = :p1";
 		Query query = em.createQuery(jpql);
 		query.setParameter("p1", nome);
 		query.setParameter("p0", codigo);
