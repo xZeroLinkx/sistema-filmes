@@ -1,3 +1,10 @@
+/*
+Nome do autor: Elian Melo Morais
+Data de criação do arquivo: 10/04/2019
+Objetivo sucinto do programa: Interface DAO(Data Access Object) que mostra os métodos obritatórios em relação a classe Participacao
+Referência ao enunciado/origem do exercício: https://www.youtube.com/user/educandoweb/videos?view=0&sort=da&flow=grid
+*/
+
 package dao;
 
 import java.util.List;

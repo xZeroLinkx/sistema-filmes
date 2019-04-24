@@ -1,9 +1,10 @@
 /*
 Nome do autor: Elian Melo Morais
 Data de criação do arquivo: 10/04/2019
-Objetivo sucinto do programa: Servlet com doGet
+Objetivo sucinto do programa: Servlet para teste de métodos do programa
 Referência ao enunciado/origem do exercício: https://www.youtube.com/user/educandoweb/videos?view=0&sort=da&flow=grid
 */
+
 package web;
 
 import java.io.IOException;
@@ -98,7 +99,9 @@ public class ServletTeste extends HttpServlet {
 			for(Filme x : lista) {
 				response.getWriter().append(x + "\n");
 			}
-*/			
+*/		
+			response.getWriter().append("Tudo OK" + "\n");
+			
 		} catch(Exception e) {
 			response.getWriter().append(e.getMessage() + "\n");
 		}

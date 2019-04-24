@@ -4,6 +4,7 @@ Data de criação do arquivo: 10/04/2019
 Objetivo sucinto do programa: Simular uma participacao em um filme
 Referência ao enunciado/origem do exercício: https://www.youtube.com/user/educandoweb/videos?view=0&sort=da&flow=grid
 */
+
 package dominio;
 
 import java.io.Serializable;
