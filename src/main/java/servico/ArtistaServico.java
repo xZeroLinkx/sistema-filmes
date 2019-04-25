@@ -41,7 +41,7 @@ public class ArtistaServico {
 	
 	public void atualizar(Artista x) throws ServicoException {
 		try {
-			Artista aux = dao.buscaNomeExatoDiferente(x.getCodAtor(), x.getNome());
+			Artista aux = dao.buscaNomeExatoDiferente(x.getCodArtista(), x.getNome());
 			if(aux != null) {
 				throw new ServicoException("Já existe um artista com esse nome!", 1);
 			}
@@ -58,7 +58,7 @@ public class ArtistaServico {
 	
 	public void excluir(Artista x) throws ServicoException {
 		try {
-			x = dao.buscar(x.getCodAtor());
+			x = dao.buscar(x.getCodArtista());
 			if(!x.getParticipacoes().isEmpty()) {
 				throw new ServicoException("Exclusão não permitida: este artista possui participações!", 2);
 			}

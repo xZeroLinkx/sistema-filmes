@@ -25,7 +25,7 @@ public class ArtistaDaoImpl implements ArtistaDao {
 	
 	@Override
 	public void inserirAtualizar(Artista x) {
-		if(x.getCodAtor() != null) {
+		if(x.getCodArtista() != null) {
 			x = em.merge(x);
 		}
 		em.persist(x);
@@ -72,7 +72,7 @@ public class ArtistaDaoImpl implements ArtistaDao {
 	@Override
 	public Artista buscaNomeExatoDiferente(Integer codigo, String nome) {
 		
-		String jpql = "SELECT x FROM Artista x WHERE x.codAtor <> :p0 AND x.nome = :p1";
+		String jpql = "SELECT x FROM Artista x WHERE x.codArtista <> :p0 AND x.nome = :p1";
 		Query query = em.createQuery(jpql);
 		query.setParameter("p1", nome);
 		query.setParameter("p0", codigo);
