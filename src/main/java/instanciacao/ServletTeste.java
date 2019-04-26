@@ -5,7 +5,7 @@ Objetivo sucinto do programa: Servlet para teste de métodos do programa
 Referência ao enunciado/origem do exercício: https://www.youtube.com/user/educandoweb/videos?view=0&sort=da&flow=grid
 */
 
-package web;
+package instanciacao;
 
 import java.io.IOException;
 import java.text.SimpleDateFormat;
