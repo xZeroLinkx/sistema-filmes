@@ -1,19 +1,19 @@
 <!--  
 Nome do autor: Elian Melo Morais 
-Data de criaÃƒÂ§ÃƒÂ£o do arquivo: 10/04/2019 
-Objetivo sucinto do programa: PÃ¡gina de listagem de artistas
+Data de criaÃ§Ã£o do arquivo: 10/04/2019 
+Objetivo sucinto do programa: Página de listagem de artistas
 Referencia ao enunciado/origem do exercicio: https://www.youtube.com/user/educandoweb/videos?view=0&sort=da&flow=grid
 -->
 
-<!-- Corresponde a uma pÃ¡gina completa padrÃ£o/modelo -->
-<%@ page language="java" contentType="text/html; charsert=UTF-8"
-	pageEncoding="UTF-8"%>
+<!-- Corresponde a uma página completa padrão/modelo -->
+<%@ page language="java" contentType="text/html; charsert=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
 <!doctype html>
 <html>
 <head>
-	<meta charset="UTF-8">
+	<meta charset="ISO-8859-1">
 	<title>Sistema de Filmes</title>
 	<link href="<%=request.getContextPath()%>/resources/css/bootstrap.min.css" rel="stylesheet">
 	<link href="<%=request.getContextPath()%>/resources/css/sticky-footer-navbar.css" rel="stylesheet">
@@ -23,13 +23,13 @@ Referencia ao enunciado/origem do exercicio: https://www.youtube.com/user/educan
 
 	<jsp:include page="/resources/templates/navbar.jsp"/>
 
-	<!-- ConteÃºdo da pÃ¡gina -->
+	<!-- Conteúdo da página -->
 	<div class="container">
 		<div class="page-header">
 			<h1>Artistas</h1>
 		</div>
 		
-		<!-- BotÃ£o de InserÃ§Ã£o e Campo de Busca -->
+		<!-- Botão de Inserção e Campo de Busca -->
 		<div class="row">
 			<div class="col-sm-2">
 				<form class="navbar-form" action="<%=request.getContextPath()%>/artista/novo">
@@ -50,12 +50,12 @@ Referencia ao enunciado/origem do exercicio: https://www.youtube.com/user/educan
 		<table class="table">
 			<thead>
 				<tr>
-					<th>CÃ³digo</th>
+					<th>Código</th>
 					<th>Nome</th>
 					<th>Nacionalidade</th>
 					<th>Cache</th>
 					<th>Nascimento</th>
-					<th>AÃ§Ã£o</th>
+					<th>Ação</th>
 				</tr>
 			</thead>
 			<tbody>
@@ -76,7 +76,7 @@ Referencia ao enunciado/origem do exercicio: https://www.youtube.com/user/educan
 
 	<jsp:include page="/resources/templates/rodape.jsp"/>
 
-	<!-- Core JS (Corresponde ao nÃºcleo de processamento do JavaScript)-->
+	<!-- Core JS (Corresponde ao núcleo de processamento do JavaScript)-->
 	<!-- Conta com as bibliotecas do bootstrap e do jquery -->
 	<script src="<%=request.getContextPath()%>/resources/js/jquery.min.js"></script>
 	<script src="<%=request.getContextPath()%>/resources/js/bootstrap.min.js"></script>
