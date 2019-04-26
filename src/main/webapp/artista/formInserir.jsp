@@ -29,7 +29,7 @@ Referencia ao enunciado/origem do exercicio: https://www.youtube.com/user/educan
 			<h1>Inserir novo Artista</h1>
 		</div>
 
-		<form name="myform" class="form-horizontal" 
+		<form method="post" name="myform" class="form-horizontal" 
 			action="<%=request.getContextPath()%>/artista/inserir">
 			
 			<div class="form-group">
