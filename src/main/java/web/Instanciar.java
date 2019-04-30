@@ -17,7 +17,11 @@ public class Instanciar {
 		
 		s = request.getParameter("codArtista");
 		if(s != null && !s.isEmpty()) {
-			aux.setCodArtista(Integer.parseInt(s));
+			try {
+				aux.setCodArtista(Integer.parseInt(s));
+			} catch(NumberFormatException e) {
+				e.printStackTrace();
+			}
 		}
 		
 		s = request.getParameter("nome");
@@ -32,7 +36,11 @@ public class Instanciar {
 		
 		s = request.getParameter("cache");
 		if(s != null && !s.isEmpty()) {
-			aux.setCache(new BigDecimal(s));
+			try {
+				aux.setCache(new BigDecimal(s));
+			} catch(NumberFormatException e) {
+				e.printStackTrace();
+			}
 		}
 		
 		s = request.getParameter("nascimento");

@@ -33,6 +33,16 @@ Referencia ao enunciado/origem do exercicio: https://www.youtube.com/user/educan
 			action="<%=request.getContextPath()%>/artista/inserir">
 			
 			<div class="form-group">
+				<div class="col-sm-offset-2 col-sm-10">
+					<ul>
+						<c:forEach items="${erros}" var="msg">
+							<li style="color: red; font-weight: bold;">${msg}</li>
+						</c:forEach>
+					</ul>
+				</div>
+			</div>
+			
+			<div class="form-group">
 				<label class="col-sm-2 control-label" for="nome">Nome:</label>
 				<div class="col-sm-5">
 					<input type="text" name="nome" id="nome" value="${item.nome}"

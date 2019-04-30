@@ -19,12 +19,14 @@ import javax.servlet.http.HttpServletResponse;
 import dominio.Artista;
 import servico.ArtistaServico;
 import servico.ServicoException;
+import servico.ValidacaoException;
 
 @WebServlet("/artista/inserir")
 public class ArtistaInserir extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	
 	private static String DESTINO = "/artista/listar.jsp";
+	private static String FORM = "/artista/formInserir.jsp";
 	private static String ERRO = "/publico/erro.jsp";
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -35,6 +37,9 @@ public class ArtistaInserir extends HttpServlet {
 		Artista x = Instanciar.artista(request);
 		
 		try {
+			// Aplica o método de verificação da Service Artista
+			as.validar(x);
+			
 			// Tenta persistir o Artista x no banco de dados
 			as.inserir(x);
 			
@@ -52,6 +57,15 @@ public class ArtistaInserir extends HttpServlet {
 			
 			// Vamos encaminhar para a pagina de erro, passando o request e o response
 			request.getRequestDispatcher(ERRO).forward(request, response);
+		} catch(ValidacaoException e) {
+			// Envia para o JSP as mensagens de erro de digitação
+			request.setAttribute("erros", e.getErros());
+			
+			// Envia para o JSP o Artista x com os dados preenchidos corretamente, evitando repetição do usuario
+			request.setAttribute("item", x);
+			
+			// Vamos encaminhar para a página de formulário, passando o request e o response
+			request.getRequestDispatcher(FORM).forward(request, response);
 		}
 
 	}
