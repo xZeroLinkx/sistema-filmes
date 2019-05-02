@@ -9,6 +9,36 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>FilmePesquisar</display-name>
+    <servlet-name>FilmePesquisar</servlet-name>
+    <servlet-class>web.FilmePesquisar</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>FilmePesquisar</servlet-name>
+    <url-pattern>/FilmePesquisar</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>FilmeResultado</display-name>
+    <servlet-name>FilmeResultado</servlet-name>
+    <servlet-class>web.FilmeResultado</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>FilmeResultado</servlet-name>
+    <url-pattern>/FilmeResultado</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>FilmeDetalhes</display-name>
+    <servlet-name>FilmeDetalhes</servlet-name>
+    <servlet-class>web.FilmeDetalhes</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>FilmeDetalhes</servlet-name>
+    <url-pattern>/FilmeDetalhes</url-pattern>
+  </servlet-mapping>
 </web-app>
 <!-- 
 Nome do autor: Elian Melo Morais

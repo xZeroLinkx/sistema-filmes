@@ -23,7 +23,7 @@ Referencia ao enunciado/origem do exercicio: https://www.youtube.com/user/educan
 			<ul class="nav navbar-nav">
 				<li><a href="<%=request.getContextPath()%>/artista/listar">Cadastro
 						de Artistas</a></li>
-				<li><a href="<%=request.getContextPath()%>/filmes/pesquisar">Pesquisar
+				<li><a href="<%=request.getContextPath()%>/filme/pesquisar">Pesquisar
 						Filmes</a></li>
 				<li><a href="<%=request.getContextPath()%>/participacao/filmes">Inserir
 						Participação</a></li>
