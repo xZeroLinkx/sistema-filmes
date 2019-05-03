@@ -1,7 +1,7 @@
 /*
 Nome do autor: Elian Melo Morais
 Data de criação do arquivo: 10/04/2019
-Objetivo sucinto do programa: Simular o funcionamento e gerenciamento de um filme
+Resumo: Classe base do programa que representa um filme com participações e artistas
 Referência ao enunciado/origem do exercício: https://www.youtube.com/user/educandoweb/videos?view=0&sort=da&flow=grid
 */
 

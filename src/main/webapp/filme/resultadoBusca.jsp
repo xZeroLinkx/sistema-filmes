@@ -1,7 +1,7 @@
 <!--  
 Nome do autor: Elian Melo Morais 
-Data de criaÃ§Ã£o do arquivo: 10/04/2019 
-Objetivo sucinto do programa: Formulário HTML de pesquisa
+Data de criação do arquivo: 02/05/2019 
+Resumo: Página HTML que exibe o resultado da busca de Filme
 Referencia ao enunciado/origem do exercicio: https://www.youtube.com/user/educandoweb/videos?view=0&sort=da&flow=grid
 -->
 

@@ -1,7 +1,7 @@
 /*
 Nome do autor: Elian Melo Morais
-Data de criação do arquivo: 10/04/2019
-Objetivo sucinto do programa: Servlet que envia os dados para um formulário
+Data de criação do arquivo: 02/05/2019
+Resumo: Servlet que envia os dados para um formulário de confirmação
 Referência ao enunciado/origem do exercício: https://www.youtube.com/user/educandoweb/videos?view=0&sort=da&flow=grid
 */
 

@@ -11,3 +11,10 @@
 	driverClassName="com.mysql.jdbc.Driver"
 	url="jdbc:mysql://localhost:3306/filmes?autoReconnect=true"/>
 </Context>
+
+<!--  
+Nome do autor: Elian Melo Morais 
+Data de criação do arquivo: 11/04/2019 
+Resumo: Arquivo de configuração do JDBC
+Referencia ao enunciado/origem do exercicio: https://www.youtube.com/user/educandoweb/videos?view=0&sort=da&flow=grid
+-->

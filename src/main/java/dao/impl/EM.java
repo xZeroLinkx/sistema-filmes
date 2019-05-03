@@ -1,7 +1,7 @@
 /*
 Nome do autor: Elian Melo Morais
-Data de criação do arquivo: 10/04/2019
-Objetivo sucinto do programa: Classe de Implementação do Entity Manager (Acesso ao banco de dados)
+Data de criação do arquivo: 12/04/2019
+Resumo: Classe de Implementação do Entity Manager (Acesso ao banco de dados)
 Referência ao enunciado/origem do exercício: https://www.youtube.com/user/educandoweb/videos?view=0&sort=da&flow=grid
 */
 

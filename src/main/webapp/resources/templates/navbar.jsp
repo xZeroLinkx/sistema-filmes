@@ -1,7 +1,7 @@
 <!--  
 Nome do autor: Elian Melo Morais 
-Data de criaÃ§Ã£o do arquivo: 10/04/2019 
-Objetivo sucinto do programa: Template do menu de navegação
+Data de criação do arquivo: 10/04/2019 
+Resumo: Template do menu de navegação
 Referencia ao enunciado/origem do exercicio: https://www.youtube.com/user/educandoweb/videos?view=0&sort=da&flow=grid
 -->
 

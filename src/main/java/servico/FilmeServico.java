@@ -1,7 +1,7 @@
 /*
 Nome do autor: Elian Melo Morais
-Data de criação do arquivo: 10/04/2019
-Objetivo sucinto do programa: Service que invoca o DAO(Data Access Object) de Filme
+Data de criação do arquivo: 12/04/2019
+Resumo: Service que invoca o DAO(Data Access Object) de Filme
 Referência ao enunciado/origem do exercício: https://www.youtube.com/user/educandoweb/videos?view=0&sort=da&flow=grid
 */
 

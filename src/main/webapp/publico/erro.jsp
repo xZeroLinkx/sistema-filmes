@@ -1,7 +1,7 @@
 <!--  
 Nome do autor: Elian Melo Morais 
-Data de criaÃ§Ã£o do arquivo: 10/04/2019 
-Objetivo sucinto do programa: Template de página padrão
+Data de criação do arquivo: 26/04/2019 
+Resumo: Página HTML que exibe os erros referentes a regras de negócio
 Referencia ao enunciado/origem do exercicio: https://www.youtube.com/user/educandoweb/videos?view=0&sort=da&flow=grid
 -->
 

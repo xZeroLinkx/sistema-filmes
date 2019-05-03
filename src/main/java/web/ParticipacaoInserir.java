@@ -1,3 +1,10 @@
+/*
+Nome do autor: Elian Melo Morais
+Data de criação do arquivo: 02/05/2019
+Resumo: Servlet que adiciona uma nova participação no banco de dados
+Referência ao enunciado/origem do exercício: https://www.youtube.com/user/educandoweb/videos?view=0&sort=da&flow=grid
+*/
+
 package web;
 
 import java.io.IOException;

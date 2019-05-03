@@ -1,7 +1,7 @@
 <!--  
 Nome do autor: Elian Melo Morais 
-Data de criaÃ§Ã£o do arquivo: 30/04/2019 
-Objetivo sucinto do programa: Formulário HTML
+Data de criação do arquivo: 30/04/2019 
+Resumo: Formulário HTML de edição de dados
 Referencia ao enunciado/origem do exercicio: https://www.youtube.com/user/educandoweb/videos?view=0&sort=da&flow=grid
 -->
 

@@ -1,7 +1,7 @@
 <!--  
 Nome do autor: Elian Melo Morais 
-Data de criaÃ§Ã£o do arquivo: 10/04/2019 
-Objetivo sucinto do programa: Formulário de Inserção de Participacao
+Data de criação do arquivo: 03/05/2019 
+Resumo: Formulário HTML que insere uma Participacao
 Referencia ao enunciado/origem do exercicio: https://www.youtube.com/user/educandoweb/videos?view=0&sort=da&flow=grid
 -->
 

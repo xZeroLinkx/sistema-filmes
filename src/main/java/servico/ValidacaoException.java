@@ -1,7 +1,7 @@
 /*
 Nome do autor: Elian Melo Morais
 Data de criação do arquivo: 30/04/2019
-Objetivo sucinto do programa: Service que faz a validação dos dados recebidos
+Resumo: Service que faz a validação dos dados recebidos
 Referência ao enunciado/origem do exercício: https://www.youtube.com/user/educandoweb/videos?view=0&sort=da&flow=grid
 */
 
