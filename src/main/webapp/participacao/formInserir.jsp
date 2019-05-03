@@ -63,21 +63,24 @@ Referencia ao enunciado/origem do exercicio: https://www.youtube.com/user/educan
 			
 			<div class="form-group">
 				<label class="col-sm-2 control-label" for="artista">Selecione o artista:</label>
-				<div class="col-sm-5">
 				
+				<div class="col-sm-5">
 					<!-- Cria um campo de seleção de opções -->
 					<select name="codArtista" class="form-control">
+						<!-- Cria uma opção com valor nulo -->
+						<option value="">-- Selecione o artista --</option>
 						<!-- Percorre a lista de artista de todos os artistas -->
 						<c:forEach items="${artistas}" var="x">
 							<!-- Para cada artista geramos uma opção -->
-							<option value="${x.codArtista}" selected=${x == artistaSelecionado ? 'selected' : ''}>
+							<!-- Utilizando o c:if -->
+							<option value="${x.codArtista}" <c:if test="${x == artistaSelecionado}">selected="selected"</c:if>>
 							<!-- Cada opção irá mostrar o nome e o cache -->
 							${x.nome}, <fmt:setLocale value="pt_BR"/><fmt:formatNumber type="currency" value="${x.cache}"/>
+							</option>
 						</c:forEach>
-						<option value="" selected=>-- Selecione o artista --</option>
 					</select>
-					
 				</div>
+				
 			</div>
 			
 			<div class="form-group">
