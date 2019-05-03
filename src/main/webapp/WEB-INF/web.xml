@@ -9,6 +9,16 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>ParticipacaoInserir</display-name>
+    <servlet-name>ParticipacaoInserir</servlet-name>
+    <servlet-class>web.ParticipacaoInserir</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ParticipacaoInserir</servlet-name>
+    <url-pattern>/ParticipacaoInserir</url-pattern>
+  </servlet-mapping>
 </web-app>
 <!-- 
 Nome do autor: Elian Melo Morais
